@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* daisyUI plugin */
+
+@plugin "daisyui";
+
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* global styles */
+
+body {
+    font-family: "Manrope", sans-serif;
+}
