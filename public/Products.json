@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "CapCut Pro Access",
+    "description": "Unlock premium video editing features including 4K export, advanced AI effects, unlimited templates, background remover, and 1TB cloud storage. Perfect for TikTok, YouTube, and Reels creators.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "4K HDR Export",
+      "AI Auto Captions",
+      "1000+ Premium Effects",
+      "Motion Tracking",
+      "Noise Reduction",
+      "1TB Cloud Storage"
+    ],
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/capcut-icon.svg"
+  },
+  {
+    "id": 2,
+    "name": "AI Resume Builder Pro",
+    "description": "Create ATS-optimized resumes in minutes with AI. Choose from 100+ modern templates, get smart suggestions, keyword optimization, and export to PDF/Word. Ideal for job seekers.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ ATS Templates",
+      "AI Content Generator",
+      "Keyword Optimization",
+      "Cover Letter Builder",
+      "PDF/Word Export",
+      "Job Matching Score"
+    ],
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968890.png"
+  },
+  {
+    "id": 3,
+    "name": "Canva Pro Lifetime",
+    "description": "Unlimited access to premium templates, 1TB storage, Brand Kit, Magic Studio AI tools, and millions of stock photos/videos. One-time payment for lifetime access.",
+    "price": 149.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Millions of Premium Assets",
+      "Magic Design AI",
+      "Brand Kit & Resize",
+      "Background Remover",
+      "1TB Storage",
+      "Team Collaboration"
+    ],
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.svg"
+  },
+  {
+    "id": 4,
+    "name": "Runway AI Video Generator",
+    "description": "Advanced AI video generation and editing tool. Turn text or images into stunning videos with Gen-3/Gen-4 models, motion brush, lip sync, and high-quality upscaling.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Text-to-Video",
+      "Image-to-Video",
+      "Advanced Motion Controls",
+      "4K Upscaling",
+      "Lip Sync & Voice",
+      "Unlimited Projects"
+    ],
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/runway-ai-icon.svg"
+  },
+  {
+    "id": 5,
+    "name": "Microsoft Office 365",
+    "description": "Full access to Word, Excel, PowerPoint, Outlook, OneDrive and more. Includes 1TB cloud storage per user and real-time collaboration features.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Word, Excel, PowerPoint",
+      "1TB OneDrive Storage",
+      "Real-time Collaboration",
+      "Desktop + Mobile Apps",
+      "Advanced Security",
+      "Regular Updates"
+    ],
+    "image": "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/microsoftoffice.svg"
+  },
+  {
+    "id": 6,
+    "name": "Adobe Photoshop",
+    "description": "Industry-standard photo editing and graphic design software. Includes AI-powered tools like Generative Fill, Neural Filters, and advanced layer support.",
+    "price": 22.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "AI Generative Fill",
+      "Advanced Layer Editing",
+      "Neural Filters",
+      "Raw Photo Processing",
+      "3D Design Tools",
+      "Cloud Library Sync"
+    ],
+    "image": "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/adobephotoshop.svg"
+  },
+  {
+    "id": 7,
+    "name": "Adobe XD",
+    "description": "Professional UI/UX design and prototyping tool. Create wireframes, interactive prototypes, and design systems with ease.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Interactive Prototyping",
+      "Auto-Animate",
+      "Design Systems",
+      "Voice Prototyping",
+      "Responsive Resize",
+      "Plugin Support"
+    ],
+    "image": "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/adobexd.svg"
+  },
+  {
+    "id": 8,
+    "name": "WinRAR",
+    "description": "Powerful archive manager and file compression tool. Supports RAR, ZIP, 7Z and many other formats with strong encryption.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "RAR & ZIP Compression",
+      "Strong AES Encryption",
+      "Split Archives",
+      "Repair Damaged Files",
+      "Multi-language Support",
+      "Drag & Drop Interface"
+    ],
+    "image": "https://img.icons8.com/color/96/winrar.png"
+  }
+]

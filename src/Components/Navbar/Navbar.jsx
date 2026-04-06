@@ -9,19 +9,11 @@ const Navbar = () => {
             <div className="w-10/12 mx-auto flex justify-between items-center">
 
                 <div className="navbar-start">
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-
-
-                    </div>
+                   
                     <a className="text-3xl text-purple-600 font-bold">DigiTools</a>
                 </div>
 
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden md:flex">
                     <ul className="flex justify-between gap-4 text-[#101727]">
                         <li>Product</li>
                         <li>Features</li>
@@ -39,7 +31,7 @@ const Navbar = () => {
                         </p>
                     </span>
 
-                    <h3>Login</h3>
+                    <h3 className='hidden md:display'>Login</h3>
                     <button className='bg-purple-600 rounded-full p-2 px-4 text-white font-light btn'>Get-Started</button>
                 </div>
 
