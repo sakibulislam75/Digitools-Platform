@@ -9,7 +9,7 @@ const Cart = ({ isadded }) => {
       </div>
     );
   return (
-    <div className="w-10/12 mx-auto grid grid-cols-1 gap-5 bg-neutral-50 shadow-lg p-3 mb-8">
+    <div className="w-10/12 mx-auto grid grid-cols-1 gap-10 bg-neutral-50 shadow-lg p-15 mb-15">
       <h1 className="text-left text-5xl font-bold">Your Cart</h1>
       {isadded.map((item) => (
         <CartCard isadded={item} key={item.id}></CartCard>

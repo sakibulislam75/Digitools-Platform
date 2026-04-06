@@ -16,16 +16,16 @@ const Products = ({ data, isadded, setAdded }) => {
           designed <br /> to boost your productivity and creativity.
         </p>
       </div>
-      <div className="text-center flex justify-center items-center gap-4 mb-10">
+      <div className="text-center flex justify-center items-center  mb-10">
         <button
           onClick={() => setSelected("products")}
-          className={`${isselected == "products" ? "btn p-5 text-white rounded-full bg-[linear-gradient(to_right,#6B2AF8,#9514FA)] " : "btn p-5 rounded full"}`}
+          className={`${isselected == "products" ? "font-semibold p-2 px-4 text-white rounded-full bg-[linear-gradient(to_right,#6B2AF8,#9514FA)] " : "font-semibold p-2 px-4 rounded full "}`}
         >
           Products
         </button>
         <button
           onClick={() => setSelected("cart")}
-          className={`${isselected == "cart" ? "btn p-5  text-white rounded-full bg-[linear-gradient(to_right,#6B2AF8,#9514FA)] " : "btn p-5 rounded full"}`}
+          className={`${isselected == "cart" ? "font-semibold p-2 px-4  text-white rounded-full bg-[linear-gradient(to_right,#6B2AF8,#9514FA)] " : "font-semibold p-2 px-4 rounded full "}`}
         >
           Cart ({isadded.length})
         </button>
