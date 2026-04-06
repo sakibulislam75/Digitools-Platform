@@ -1,6 +1,14 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const CartCard = ({ isadded }) => {
+const CartCard = ({ isadded, setAdded, allProducts }) => {
+  const rmv = () => {
+    const updated = allProducts.filter(
+      (addedCard) => addedCard.id !== isadded.id,
+    );
+    setAdded(updated);
+    toast.info("You Are Deleting The Product");
+  };
   return (
     <div className="w-full bg-white shadow-md rounded-2xl p-8 flex items-center justify-between">
       <div className=" flex gap-15 items-center">
@@ -18,7 +26,9 @@ const CartCard = ({ isadded }) => {
         </span>
       </div>
       <div>
-        <button className="btn text-red-600">Rmove</button>
+        <button className="btn text-red-600" onClick={rmv}>
+          Rmove
+        </button>
       </div>
     </div>
   );

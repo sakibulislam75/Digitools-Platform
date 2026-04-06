@@ -44,7 +44,7 @@ const Products = ({ data, isadded, setAdded }) => {
       ) : (
         <div>
           {" "}
-          <Cart isadded={isadded} setAdded={setAdded}></Cart>
+          <Cart isadded={isadded} setAdded={setAdded} data={data}></Cart>
         </div>
       )}
     </>
