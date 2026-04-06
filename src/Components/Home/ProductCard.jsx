@@ -1,9 +1,21 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ data }) => {
+const ProductCard = ({ data, isadded, setAdded }) => {
+  const isbuy = isadded.some((item) => item.id === data.id);
+
+  const handleBuy = () => {
+    if (isbuy) {
+      toast.error("You Are Already Added This Product");
+      return;
+    }
+    setAdded([...isadded, data]);
+    toast.success("Successfully Added This Product!");
+  };
+
   return (
-    <div className="relative bg-white rounded-2xl p-8  flex flex-col gap-4 shadow-sm transition duration-1000 hover:scale-102">
+    <div className="relative bg-white rounded-2xl p-8 flex flex-col gap-4 shadow-sm transition duration-1000 hover:scale-102">
       {data.tag == "new" ? (
         <div className="badge badge-soft badge-success absolute top-4 right-4">
           {data.tag}
@@ -13,12 +25,12 @@ const ProductCard = ({ data }) => {
           {data.tag}
         </div>
       ) : data.tag == "best seller" ? (
-        <div className="badge badge-soft  badge-warning absolute top-4 right-4 ">
+        <div className="badge badge-soft badge-warning absolute top-4 right-4">
           {data.tag}
         </div>
       ) : null}
 
-      <img src={data.image} alt={data.name} className="w-25 h-auto  pt-4" />
+      <img src={data.image} alt={data.name} className="w-25 h-auto pt-4" />
 
       <div>
         <h3 className="text-2xl font-bold pb-1">{data.name}</h3>
@@ -35,7 +47,7 @@ const ProductCard = ({ data }) => {
       <ul className="flex flex-col gap-2">
         {data.features.map((ftr) => (
           <li
-            key={ftr.id}
+            key={ftr}
             className="flex items-center gap-2 text-sm text-gray-700"
           >
             <FaCheck className="text-green-500" /> {ftr}
@@ -43,8 +55,15 @@ const ProductCard = ({ data }) => {
         ))}
       </ul>
 
-      <button className="bg-gradient-to-r from-[#6B2AF8] to-[#9514FA] mt-auto  rounded-full text-white  btn p-2  font-semibold">
-        Buy Now
+      <button
+        onClick={handleBuy}
+        className={`${
+          isbuy
+            ? "mt-auto rounded-full text-white btn bg-green-500 p-2 font-semibold"
+            : "bg-gradient-to-r from-[#6B2AF8] to-[#9514FA] mt-auto rounded-full text-white btn p-2 font-semibold"
+        }`}
+      >
+        {isbuy ? "Added To Cart!" : "Buy Now"}
       </button>
     </div>
   );

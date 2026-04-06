@@ -1,7 +1,8 @@
 import React, { use, useState } from "react";
 import ProductCard from "./ProductCard";
+import Cart from "./Cart";
 
-const Products = ({ data }) => {
+const Products = ({ data, isadded, setAdded }) => {
   const [isselected, setSelected] = useState("products");
   const dt = use(data);
   return (
@@ -26,14 +27,26 @@ const Products = ({ data }) => {
           onClick={() => setSelected("cart")}
           className={`${isselected == "cart" ? "btn p-5  text-white rounded-full bg-[linear-gradient(to_right,#6B2AF8,#9514FA)] " : "btn p-5 rounded full"}`}
         >
-          Cart
+          Cart ({isadded.length})
         </button>
       </div>
-      <div className="w-10/12 mx-auto grid grid-cols-1 gap-4 md:grid-cols-3 gap-4 ">
-        {dt.map((item) => (
-          <ProductCard key={item.id} data={item}></ProductCard>
-        ))}
-      </div>
+      {isselected == "products" ? (
+        <div className="w-10/12 mx-auto grid grid-cols-1 gap-4 md:grid-cols-3 gap-4 mb-23">
+          {dt.map((item) => (
+            <ProductCard
+              key={item.id}
+              data={item}
+              isadded={isadded}
+              setAdded={setAdded}
+            ></ProductCard>
+          ))}
+        </div>
+      ) : (
+        <div>
+          {" "}
+          <Cart isadded={isadded} setAdded={setAdded}></Cart>
+        </div>
+      )}
     </>
   );
 };
