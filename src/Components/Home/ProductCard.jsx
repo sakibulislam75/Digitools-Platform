@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-const ProductCard = ({ data, isadded, setAdded }) => {
+const ProductCard = ({ data, isadded, setAdded, price, setPrice }) => {
   const isbuy = isadded.some((item) => item.id === data.id);
 
   const handleBuy = () => {
@@ -11,6 +11,7 @@ const ProductCard = ({ data, isadded, setAdded }) => {
       return;
     }
     setAdded([...isadded, data]);
+    setPrice(Number(price) + Number(data.price));
     toast.success("Successfully Added This Product!");
   };
 

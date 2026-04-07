@@ -5,6 +5,8 @@ import Banner from "./Components/Banner/Banner";
 import Banner2 from "./Components/Banner/Banner2";
 import Products from "./Components/Home/Products";
 import Navbar from "./Components/Navbar/Navbar";
+import Steps from "./Components/Home/Steps";
+import Pricing from "./Components/Home/Pricing";
 const productsData = async () => {
   const res = await fetch("/Products.json");
   return res.json();
@@ -27,6 +29,8 @@ function App() {
       >
         <Products data={data} isadded={isadded} setAdded={setAdded}></Products>
       </Suspense>
+      <Steps></Steps>
+      <Pricing></Pricing>
       <ToastContainer />
     </>
   );

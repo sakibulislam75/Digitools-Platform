@@ -4,6 +4,7 @@ import Cart from "./Cart";
 
 const Products = ({ data, isadded, setAdded }) => {
   const [isselected, setSelected] = useState("products");
+  const [price, setPrice] = useState(0);
   const dt = use(data);
   return (
     <>
@@ -38,13 +39,20 @@ const Products = ({ data, isadded, setAdded }) => {
               data={item}
               isadded={isadded}
               setAdded={setAdded}
+              price={price}
+              setPrice={setPrice}
             ></ProductCard>
           ))}
         </div>
       ) : (
         <div>
-          {" "}
-          <Cart isadded={isadded} setAdded={setAdded} data={data}></Cart>
+          <Cart
+            isadded={isadded}
+            setAdded={setAdded}
+            data={data}
+            price={price}
+            setPrice={setPrice}
+          ></Cart>
         </div>
       )}
     </>
