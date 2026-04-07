@@ -7,6 +7,8 @@ import Products from "./Components/Home/Products";
 import Navbar from "./Components/Navbar/Navbar";
 import Steps from "./Components/Home/Steps";
 import Pricing from "./Components/Home/Pricing";
+import Ready from "./Components/Home/Ready";
+import Footer from "./Components/Home/Footer";
 const productsData = async () => {
   const res = await fetch("/Products.json");
   return res.json();
@@ -31,6 +33,8 @@ function App() {
       </Suspense>
       <Steps></Steps>
       <Pricing></Pricing>
+      <Ready></Ready>
+      <Footer></Footer>
       <ToastContainer />
     </>
   );
