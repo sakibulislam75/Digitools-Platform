@@ -11,7 +11,7 @@ const ProductCard = ({ data, isadded, setAdded, price, setPrice }) => {
       return;
     }
     setAdded([...isadded, data]);
-    setPrice(Number(price) + Number(data.price));
+    setPrice((Number(price) + Number(data.price)).toFixed(2));
     toast.success("Successfully Added This Product!");
   };
 
